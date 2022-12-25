@@ -1,7 +1,9 @@
 body {
+    font-family: 'Courier New', Courier, monospace, serif;
     background-image: url(../img/bg.png);
     background-color: black;
     color: #fff;
+    overflow-x: hidden;
 }
 
 .conainer {
@@ -13,11 +15,17 @@ body {
     padding-right: 2rem;
 }
 
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    color: rgb(228, 65, 206);
+}
+
 .info-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12rem;
+    margin-top: 5rem;
 }
 
 .info {
@@ -39,7 +47,7 @@ body {
 }
 
 span {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 
@@ -51,17 +59,21 @@ span {
 
 @media only screen and (max-width:900px) {
     .info {
-        max-width: 250px;
+        max-width: 240px;
     }
     .info:not(:last-child) {
         margin-right: 1rem;
     }
     span {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 }
 
 @media only screen and (max-width:600px) {
+    h1 {
+        font-size: 3rem;
+    }
+
     .info-wrapper {
         flex-direction: column;
         margin-top: 4rem;
